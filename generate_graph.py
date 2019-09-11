@@ -16,8 +16,12 @@ def generate_graph(number_of_nodes):
         for node in nodes:
             to_node = nodes[randint(0, len(nodes) - 1)]
             if to_node != node:
-                graph.add_edges(Edge([node, to_node], randint(0, 100)))
-                connected_nodes.add(node)
-                connected_nodes.add(to_node)
+                edge = Edge([node, to_node], randint(0, 100))
+                if not edge in node.edges and not edge in to_node.edges:
+                    node.edges.add(edge)
+                    to_node.edges.add(edge)
+                    graph.add_edges(edge)
+                    connected_nodes.add(node)
+                    connected_nodes.add(to_node)
 
     return graph

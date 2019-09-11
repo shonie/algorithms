@@ -1,4 +1,4 @@
 class Node:
-    def __init__(self, name):
+    def __init__(self, name, edges = set()):
         self.name = name
-        self.edges = []
+        self.edges = edges
