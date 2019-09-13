@@ -2,6 +2,8 @@ class Edge:
     def __init__(self, nodes, cost):
         self.nodes = nodes
         self.cost = cost
+        for node in nodes:
+            node.edges.append(self)
 
     def __str__(self):
         from_node = self.nodes[0]

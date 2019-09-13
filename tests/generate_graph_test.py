@@ -9,7 +9,7 @@ class TestGenerateGraph(unittest.TestCase):
 
     def test_creates_connected_graph(self):
         g = generate_graph(5)
-        self.assertTrue(is_graph_connected(g.get_nodes()))
+        self.assertTrue(is_graph_connected(g))
 
 
 if __name__ == '__main__':

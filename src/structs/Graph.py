@@ -1,6 +1,7 @@
 class Graph:
     def __init__(self):
         self.edges = []
+        self.nodes_count = 0
 
     def add_edges(self, *edges):
         for edge in edges:
