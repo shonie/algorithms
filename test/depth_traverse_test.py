@@ -1,6 +1,6 @@
 import unittest
-from src.depth_traverse import traverse
-from src.generate_graph import generate_graph
+from lib.networks.depth_traverse import traverse
+from lib.networks.generate_graph import generate_graph
 
 class TestDepthTraverse(unittest.TestCase):
     def test_visits_all_nodes(self):

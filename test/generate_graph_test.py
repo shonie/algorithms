@@ -1,6 +1,6 @@
 import unittest
-from src.generate_graph import generate_graph
-from src.is_graph_connected import is_graph_connected
+from lib.networks.generate_graph import generate_graph
+from lib.networks.is_graph_connected import is_graph_connected
 
 class TestGenerateGraph(unittest.TestCase):
     def test_creates_graph_of_two_nodes(self):

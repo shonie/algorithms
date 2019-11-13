@@ -1,6 +1,6 @@
 import unittest
-from src.width_traverse import traverse
-from src.generate_graph import generate_graph
+from lib.networks.width_traverse import traverse
+from lib.networks.generate_graph import generate_graph
 
 class TestWidthTraverse(unittest.TestCase):
     def test_visits_all_nodes(self):

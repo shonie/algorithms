@@ -1,8 +1,8 @@
 import unittest
-from src.is_graph_connected import is_graph_connected
-from src.structs.Graph import Graph
-from src.structs.Node import Node
-from src.structs.Edge import Edge
+from lib.networks.is_graph_connected import is_graph_connected
+from lib.networks.Graph import Graph
+from lib.networks.Node import Node
+from lib.networks.Edge import Edge
 
 class TestIsGraphConnected(unittest.TestCase):
     def test_returns_false_for_not_connected_graph(self):
